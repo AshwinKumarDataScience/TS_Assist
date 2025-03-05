@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Issues</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Matching Known Issues</h1>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Issue Description</th>
+                    <th>Resolution Status</th>
+                    <th>Confidence Score</th>
+                    <th>Troubleshooting Steps</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for match in matches %}
+                <tr>
+                    <td>{{ match['Issue Description'] }}</td>
+                    <td>{{ match['Resolution Status'] }}</td>
+                    <td>{{ match['Confidence Score'] }}</td>
+                    <td>{{ match['Troubleshooting Steps'] | safe }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/" class="btn btn-secondary">Back to Search</a>
+    </div>
+</body>
+</html>

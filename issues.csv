@@ -1,0 +1,23 @@
+Issue Description,Keywords,Resolution Status,Confidence Score,Troubleshooting Steps
+Cannot connect headset to PC via Bluetooth,connect Bluetooth PC,Workaround Available,7,"1. Ensure Bluetooth is enabled on PC.
+<br>
+2. Put headset in pairing mode.
+<br>
+3. Re-pair device.
+<br>
+4. Update Bluetooth drivers."
+No sound coming from headset,sound audio no sound,Resolved,9,"1. Set headset as default audio device.
+<br>
+2. Check volume levels.
+<br>
+3. Update firmware."
+Microphone not working in calls,microphone calls not working,Open,4,"1. Ensure microphone boom is down.
+<br>
+2. Check mute settings.
+<br>
+3. Update drivers."
+Headset causes Zoom/Teams to crash,Zoom Teams crash,Resolved,10,"1. Update Zoom/Teams to the latest version.
+<br>
+2. Re-pair headset.
+<br>
+3. Update firmware."

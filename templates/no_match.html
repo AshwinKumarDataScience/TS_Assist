@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Matching Issues</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>No Matching Issues Found</h1>
+        <p><strong>Query:</strong> "{{ query }}"</p>
+        <p>This appears to be a new issue. Here are some suggested troubleshooting steps:</p>
+        <div class="alert alert-info">
+            {{ troubleshooting | safe }}
+        </div>
+        <p>Next steps:</p>
+        <ol>
+            <li>Acknowledge to the customer that this might be a new issue.</li>
+            <li>Collect detailed information (e.g., steps to reproduce, error messages, system details).</li>
+            <li>Try the steps above.</li>
+            <li>If unresolved, escalate to the specialized team and log the issue for tracking.</li>
+        </ol>
+        <a href="/" class="btn btn-secondary">Back to Search</a>
+    </div>
+</body>
+</html>
